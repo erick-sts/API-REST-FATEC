@@ -49,7 +49,7 @@
           class="form-control"
           id="inputNome"
           name="inputNome"
-          #nomeInput [value] = "professor.nome"
+          #nomeInput [value] = "professor?.nome"
         />
         
       </div>
@@ -61,7 +61,7 @@
           class="form-control"
           id="inputEmail"
           name="inputEmail"
-          #emailInput [value] = "professor.email"
+          #emailInput [value] = "professor?.email"
         />
       </div>
 
@@ -73,7 +73,7 @@
             class="form-select"
             required
             name="inputTitulacao"
-            #titulacaoInput [value] = "professor.titulacao"
+            #titulacaoInput [value] = "professor?.titulacao"
           >
             <option selected>Selecione...</option>
             <option>Mestre</option>
@@ -86,7 +86,7 @@
             id="inputCurso1"
             class="form-select"
             name="inputCurso"
-            #cursoInput [value] = "professor.curso"
+            #cursoInput [value] = "professor?.curso"
           >
             <option selected>Selecione...</option>
             <option>DSM</option>
@@ -105,7 +105,7 @@
           class="form-control"
           id="inputNumeroMatricula"
           name="inputNumeroMatricula"
-          #numMatriculaInput [value] = "professor.numero_matricula"
+          #numMatriculaInput [value] = "professor?.numero_matricula"
           disabled
         />
       </div>
@@ -119,7 +119,7 @@
           class="form-control"
           id="inputCodigoUESede"
           name="inputCodigoUESede"
-          #codSedeInput [value] ="professor.cod_ue"
+          #codSedeInput [value] ="professor?.cod_ue"
         />
       </div>
       <div class="col-md-6">
@@ -131,7 +131,7 @@
           class="form-control"
           id="inputCurriculumLates"
           name="inputCurriculumLates"
-          #latesInput [value] = "professor.lates"
+          #latesInput [value] = "professor?.lates"
         />
       </div>
 
@@ -142,7 +142,7 @@
           class="form-control"
           id="inputReferencia"
           name="inputReferencia"
-          #referenciaInput [value]= "professor.referencia"
+          #referenciaInput [value]= "professor?.referencia"
         />
       </div>
       <div class="col-md-6">
@@ -152,7 +152,7 @@
           class="form-control"
           id="inputReferencia"
           name="inputReferencia"
-          #observacoesInput [value]= "professor.observacoes"
+          #observacoesInput [value]= "professor?.observacoes"
         />
       </div>
 
