@@ -29,7 +29,7 @@ export class ProfessorService {
       curso,
       email,
     };
-    this.http.post<any>('http://localhost:3000/professores/', data).subscribe({
+    this.http.post<any>('https://api-rest-fatec-backend.onrender.com/professores/', data).subscribe({
       next: (response) => {
         alert('Professor cadastrado com sucesso!');
       },
@@ -40,7 +40,7 @@ export class ProfessorService {
   }
 
   listarProfessores(): Observable<any[]> {
-    return this.http.get<any[]>('http://localhost:3000/professores/');
+    return this.http.get<any[]>('https://api-rest-fatec-backend.onrender.com/professores/');
   }
 
   atualizarCadadastroProfessor(
@@ -66,22 +66,24 @@ export class ProfessorService {
       observacoes
     };
     return this.http.put<any>(
-      'http://localhost:3000/professores/' + numero_matricula, data
+      'https://api-rest-fatec-backend.onrender.com/professores/' + numero_matricula, data
     )
   }
  
 
   obterProfessorPorNome(nome: string): Observable<any> {
-    return this.http.get<any>('http://localhost:3000/professores/' + nome);
+    return this.http.get<any>('https://api-rest-fatec-backend.onrender.com/professores/' + nome);
   }
 
   obterProfessorPorCurso(curso1: String, curso2: String, curso3: String):Observable<any> {
-    return this.http.get<any>('http://localhost:3000/professores/' + curso1)
+    return this.http.get<any>('https://api-rest-fatec-backend.onrender.com/professores/' + curso1)
   }
   
 
   excluirProfessor(numero_matricula: string): Observable<any> {
-    return this.http.delete<any>('http://localhost:3000/professores/' + numero_matricula);
+    return this.http.delete<any>('https://api-rest-fatec-backend.onrender.com/professores/' + numero_matricula);
   }
+
+
 
 }
