@@ -40,7 +40,7 @@ Essa API RESTful utiliza dos métodos http post, get, put e delete, completando 
 
 ## Implantação em produção
 - Back-end: Javascript com Nodejs
-- Front end web: Angular
+- Front-end web: Angular
 - Banco de dados: MongoDB
 
 # Como executar o projeto
