@@ -28,7 +28,7 @@ export class ProfessorService {
       curso,
       email,
     };
-    this.http.post<any>('http://localhost:3000/professores/', data).subscribe({
+    this.http.post<any>('https://api-rest-fatec-backend.onrender.com/professores/', data).subscribe({
       next: (response) => {
 
       },
@@ -65,7 +65,7 @@ export class ProfessorService {
       observacoes
     };
     return this.http.put<any>(
-      'http://localhost:3000/professores/' + numero_matricula, data
+      'https://api-rest-fatec-backend.onrender.com/professores/' + numero_matricula, data
     )
   }
 
@@ -91,6 +91,9 @@ export class ProfessorService {
 
     return this.http.get<any[]>('http://localhost:3000/professores/num_professores');
   }
+
+
+
 
 
 }

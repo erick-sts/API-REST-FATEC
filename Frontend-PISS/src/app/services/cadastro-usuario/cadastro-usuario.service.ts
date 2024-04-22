@@ -13,7 +13,7 @@ export class CadastroUsuarioService {
 
   enviarCadastroParaBackend(email: string, senha: string) {
     const data = { email, senha }; // Cria um objeto com os dados do formulário
-    this.http.post<any>('http://localhost:3000/usuarios/cadastrar', data).subscribe({
+    this.http.post<any>('https://api-rest-fatec-backend.onrender.com/usuarios/cadastrar', data).subscribe({
       next: response => {
         console.log('Usuário cadastrado com sucesso!', response);
         
