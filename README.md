@@ -5,7 +5,7 @@
 https://github.com/erick-sts/API-REST-FATEC-BACKEND
 
 # <img src="https://github.com/leonfagundes27/Assets/blob/main/Images/info.png" width="30" height="30"> Sobre o projeto 
-(link do projeto publicado)
+([Link da API publicada](https://api-rest-fatec-backend.onrender.com/doc))
 
 Essa é uma API fullstack que conta com front-end e back-end completos construída para um trabalho universitário e uso da secretaria da FATEC Votorantim.
 
