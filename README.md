@@ -1,10 +1,11 @@
 # <img src="https://github.com/leonfagundes27/Assets/blob/main/Images/api.png" width="50" height="50"> API REST - Sistema de cadastro de professores 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/leonfagundes27/Backend-Projeto-Integrador/blob/main/LICENSE) 
 
+# Link do repositório do backend
+https://github.com/erick-sts/API-REST-FATEC-BACKEND/tree/main
+
 # <img src="https://github.com/leonfagundes27/Assets/blob/main/Images/info.png" width="30" height="30"> Sobre o projeto 
 (link do projeto publicado)
-
-## Link do repositório do Back-end
 
 Essa é uma API fullstack que conta com front-end e back-end completos construída para um trabalho universitário e uso da secretaria da FATEC Votorantim.
 
@@ -79,10 +80,5 @@ yarn start
 ```
 
 # Autor
-Erick Oliveira
-Juliano Ramalho
-Leon Fagundes
-Lucas Adami
-Matheus Garibaldi
-Vitor Ruan
+Erick Oliveira, Juliano Ramalho, Leon Fagundes, Lucas Adami, Matheus Garibaldi, Vitor Ruan
 
