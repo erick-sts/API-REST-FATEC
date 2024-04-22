@@ -49,14 +49,14 @@ Essa API RESTful utiliza dos métodos http post, get, put e delete, completando 
 Pré-requisitos: npm + dependecias
 
 ```bash
-# instalar as dependencias
-npm i
-
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/erick-sts/API-REST-FATEC-BACKEND.git
 
 # entrar na pasta do projeto back end
 cd Backend-Projeto-Integrador
+
+# instalar as dependencias
+npm install
 
 # executar o projeto
 npm run dev
@@ -67,18 +67,18 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/erick-sts/API-REST-FATEC-FRONTEND.git
 
 # entrar na pasta do projeto front end web
-cd front-web
+cd API-REST-FATEC-FRONTEND
 
 # instalar dependências
-yarn install
+npm install
 
 # executar o projeto
-yarn start
+ng serve
 ```
 
-# Autor
+# Autores
 Erick Oliveira, Juliano Ramalho, Leon Fagundes, Lucas Adami, Matheus Garibaldi, Vitor Ruan
 
