@@ -34,6 +34,9 @@ export class FormProfessorComponent {
       latesInput,
       referenciaInput
     );
+
+    alert("Professor cadastrado com sucesso!")
+
   }
 
   

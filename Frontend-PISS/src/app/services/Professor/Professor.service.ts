@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProfessorService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  enviarCadastroProfessorParaBackend(
+  enviarCadastroProfessorParaBackend(//Create
     nome: string,
     numero_matricula: string,
     cod_ue: string,
@@ -18,7 +18,6 @@ export class ProfessorService {
     curso: string,
     email: string
   ) {
-    alert('teste ok');
     const data = {
       nome,
       numero_matricula,
@@ -31,7 +30,7 @@ export class ProfessorService {
     };
     this.http.post<any>('http://localhost:3000/professores/', data).subscribe({
       next: (response) => {
-        alert('Professor cadastrado com sucesso!');
+
       },
       error: (error) => {
         alert('Erro ao cadastrar Professor:' + error.message);
@@ -39,11 +38,11 @@ export class ProfessorService {
     });
   }
 
-  listarProfessores(): Observable<any[]> {
+  listarProfessores(): Observable<any[]> { //Read
     return this.http.get<any[]>('http://localhost:3000/professores/');
   }
 
-  atualizarCadadastroProfessor(
+  atualizarCadadastroProfessor( //Update
     nome: string,
     numero_matricula: string,
     cod_ue: string,
@@ -53,7 +52,7 @@ export class ProfessorService {
     curso: string,
     email: string,
     observacoes: string
-  ):Observable<any>{
+  ): Observable<any> {
     const data = {
       nome,
       numero_matricula,
@@ -69,19 +68,29 @@ export class ProfessorService {
       'http://localhost:3000/professores/' + numero_matricula, data
     )
   }
- 
 
-  obterProfessorPorNome(nome: string): Observable<any> {
-    return this.http.get<any>('http://localhost:3000/professores/' + nome);
-  }
-
-  obterProfessorPorCurso(curso1: String, curso2: String, curso3: String):Observable<any> {
-    return this.http.get<any>('http://localhost:3000/professores/' + curso1)
-  }
-  
-
-  excluirProfessor(numero_matricula: string): Observable<any> {
+  excluirProfessor(numero_matricula: string): Observable<any> { //Delete
     return this.http.delete<any>('http://localhost:3000/professores/' + numero_matricula);
   }
+
+
+
+
+
+
+
+  obterProfessorPorNome(nome: string): Observable<any> { //retorna um objeto professor, recebendo como parâmetro no back, seu nome
+    return this.http.get<any>('http://localhost:3000/professores/nome/' + nome);
+  }
+
+  obterProfessorPorCurso(cursos: string[]): Observable<any> {//retorna um objeto professor, recebendo como parâmetro no back, seu curso.
+    return this.http.get<any>('http://localhost:3000/professores/cursos/' + cursos)
+  }
+
+  contarProfessoresCadastrados(): Observable<any> {
+
+    return this.http.get<any[]>('http://localhost:3000/professores/num_professores');
+  }
+
 
 }

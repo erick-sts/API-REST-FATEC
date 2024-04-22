@@ -17,18 +17,17 @@ export class CentralComponent implements OnInit {
 
   professores: any[] = [];
   professor: any
+  quantidadeProfessoresCadastrados: number = 1
 
   constructor(
     private professorService: ProfessorService,
     private router: Router
-  ) {}
-
-
-  
+  ) { }
 
 
   ngOnInit(): void {
     this.listarProfessores();
+    this.contarProfessoresCadastrados()
   }
 
   buscarProfessorPeloNome(nome: string): void {
@@ -41,7 +40,7 @@ export class CentralComponent implements OnInit {
               const professorEncontrado = data[0];
               this.professores = [professorEncontrado]; // Atualiza a lista de professores apenas com o professor encontrado
             } else {
-              
+
               alert('Nenhum professor encontrado com o nome: ' + nome);
             }
           },
@@ -50,11 +49,33 @@ export class CentralComponent implements OnInit {
             this.professores = []; // Limpa a lista de professores
           }
         );
-    } else {
-      this.listarProfessores(); //chamar o método de procurar professor por curso (if procurarProfessorPorCurso deu certo, retorna ele, se não retorna a listarProfessores)
     }
   }
-  
+
+  buscarProfessorPorCurso(cursosSelecionados: HTMLInputElement[]): void {
+    const cursos: string[] = []
+    for (const checkbox of cursosSelecionados) {
+      if (checkbox.checked) {
+        cursos.push(checkbox.value)
+      }
+    }
+
+    this.professorService.obterProfessorPorCurso(cursos).subscribe((data) => {
+      this.professores = data
+    })
+
+
+  }
+
+  contarProfessoresCadastrados() {
+    this.professorService.contarProfessoresCadastrados()
+      .subscribe(
+        (data) => {  
+          console.log(JSON.stringify(data))
+            this.quantidadeProfessoresCadastrados = data.numeroProfessores; 
+          }
+      );
+  }
   
 
 
