@@ -1,0 +1,56 @@
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EDEDED;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+
+
+}
+
+#formularioProfessor {
+    width: 60%;
+    border: solid 1px;
+    background-color: white;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+
+
+
+
+#formularioProfessor input,
+#formularioProfessor select {
+    border-radius: 10px;
+    width: 100%;
+    height: 4.5vh;
+    
+}
+
+#regulaSelect{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#formularioProfessor #btnCadastrar {
+    display: flex;
+    justify-content: center;
+}
+
+
