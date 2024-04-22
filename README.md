@@ -17,9 +17,9 @@ O objetivo desse software é que seja fácil e simples o cadastro de professores
 Essa API RESTful utiliza dos métodos http post, get, put e delete, completando os métodos básicos do CRUD. Além disso, a aplicação é construída em cima da arquitetura MVC, segue as imagens abaixo:
 
 ## <img src="https://github.com/leonfagundes27/Assets/blob/main/Images/imagem.png" width="30" height="30"> Layout
-![Layout 1](link da tela principal)
+![Tela Inicial](https://github.com/erick-sts/assets/blob/main/tela-inicio.png)
 
-![Layout 2](link da tela secundaria)
+![Tela de Login](https://github.com/erick-sts/assets/blob/main/tela-login.png)
 
 ![Layout 3](link da tela terciaria)
 
