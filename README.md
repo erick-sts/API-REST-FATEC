@@ -21,7 +21,7 @@ Essa API RESTful utiliza dos métodos http post, get, put e delete, completando 
 ##
 ![Tela de Login](https://github.com/erick-sts/assets/blob/main/tela-login.png)
 ##
-![Layout 3](link da tela terciaria)
+![Tela principal](https://github.com/erick-sts/assets/blob/main/tela-principal.PNG)
 ##
 ## Arquitetura do projeto
 ![Arquitetura Projeto](https://github.com/leonfagundes27/Assets/blob/main/Images/arquitetura%20projeto.png)
