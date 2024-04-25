@@ -5,11 +5,12 @@ import { RouterLink } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
 import { ProfessorService } from '../../services/Professor/Professor.service';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-central',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, NavbarComponent],
   templateUrl: './central.component.html',
   styleUrl: './central.component.css',
 })

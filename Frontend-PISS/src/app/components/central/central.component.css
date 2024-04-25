@@ -1,108 +1,106 @@
 body {
   background-color: #e8e8e8;
   font-family: Inter;
+}
 
-  aside {
+aside {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  box-shadow: 0px 4px 31.8px rgba(0, 0, 0, 0.25);
+
+  header {
+    height: 45%;
+  }
+
+  #topicos {
+    height: 100%;
+    width: 100%;
+    padding: 1.2vw;
+  }
+
+  #topicoCadastrar,
+  #topicoEditar,
+  #topicoImprimir {
     display: flex;
-    height: 100vh;
+    flex-direction: row; /* Corrigido */
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
-    box-shadow: 0px 4px 31.8px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+  }
 
-    header {
-      height: 45%;
-    }
+  .nav-link {
+    width: fit-content;
+    padding: 0;
+    padding-left: 10px;
+  }
+}
 
-    #topicos {
-      height: 100%;
-      width: 100%;
-      padding: 1.2vw;
-    }
+main {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 2%;
+  width: 100%; 
 
-    #topicoCadastrar,
-    #topicoEditar,
-    #topicoImprimir {
+  #headerMain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    form {
       display: flex;
-      flex-direction: line;
       align-items: center;
-      justify-content: space-between;
-      padding: 0;
-      width: 100%;
-      font-size: 150%;
-      font-weight: bold;
-      color: black;
-    }
 
-    .nav-link {
-      width: fit-content;
-      padding: 0;
-      padding-left: 10px;
+      #contadorProfessores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #inputPesquisa {
+        margin-right: 5%;
+      }
+
+      #conjuntoFiltroCheckBox {
+        display: flex;
+        margin-right: 5%;
+        margin-left: 5%;
+
+        .filtroCheckBox {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
     }
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2%;
+  table {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 31.8px rgba(0, 0, 0, 0.25);
 
-    #headerMain {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-
-      form {
-        display: flex;
-        align-items: center;
-
-        #contadorProfessores{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-        }
-
-        #inputPesquisa {
-          margin-right: 5%;
-        }
-
-        #conjuntoFiltroCheckBox {
-            display: flex;
-            margin-right: 5%;
-            margin-left: 5%;
-
-          .filtroCheckBox {
-            display: flex;
-            flex-direction: column;
-            margin-left: 10px;
-            margin-right: 10px;
-
-
-
-
-          }
-        }
-      }
+    #urlLates {
+      width: 100px;
     }
 
-    table {
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0px 4px 31.8px rgba(0, 0, 0, 0.25);
+    #dadosTabela {
+      font-size: 80%;
+    }
 
-      #urlLates {
-        width: 100px;
-      }
-
-      #dadosTabela {
-        font-size: 80%;
-      }
-
-      .colunaOpcoes {
-        text-decoration: none;
-        cursor: pointer;
-      }
+    .colunaOpcoes {
+      text-decoration: none;
+      cursor: pointer;
     }
   }
 }

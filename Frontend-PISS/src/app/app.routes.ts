@@ -6,6 +6,7 @@ import { FormProfessorComponent } from './components/form-professor/form-profess
 import { CadastroUsuarioComponent } from './components/cadastro-usuario/cadastro-usuario.component';
 import { EdicaoProfessorComponent } from './components/edicao-professor/edicao-professor.component';
 import { AlertaComponent } from './components/alerta/alerta.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 export const routes: Routes = [
     {path: '', component:HomeComponent},
@@ -14,7 +15,8 @@ export const routes: Routes = [
     {path: 'central', component:CentralComponent},
     {path: 'central/FormProfessor', component: FormProfessorComponent},
     {path: 'edicaoProfessor/:nome', component: EdicaoProfessorComponent},
-    {path: 'alerta', component:AlertaComponent}
+    {path: 'alerta', component:AlertaComponent},
+    {path: 'navbar', component:NavbarComponent},
 
 
 ];
